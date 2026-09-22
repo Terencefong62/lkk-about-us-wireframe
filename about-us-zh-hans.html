@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>李锦记｜关于我们</title>
+  <style>
+    :root{--paper:#fff;--ink:#000;--muted:#333;--line:#b8b8b8;--soft:#f3f3f3;--font-flare:"ABC Arizona Flare","ABC-Arizona-Flare",Georgia,serif;--font-ui:Arial,Helvetica,sans-serif;--content-max:1600px;--page-pad:clamp(24px,7vw,112px);--section-y:clamp(88px,10vw,156px);--heading-copy-gap:18px;--copy-cta-gap:26px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font-ui);overflow-x:hidden}a{color:inherit;text-decoration:none}button{color:inherit;font:inherit}
+    .header-shell{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);transition:transform .28s ease;will-change:transform}.header-shell.is-hidden{transform:translateY(-100%)}.utility-bar{height:38px;padding:0 var(--page-pad);border-bottom:1px solid var(--line);display:flex;justify-content:flex-end;align-items:center;gap:28px;font-size:11px;letter-spacing:.03em}.utility-bar button{border:0;background:transparent;padding:8px 0;cursor:pointer}.site-header{min-height:104px;padding:12px var(--page-pad);border-bottom:1px solid var(--line);display:grid;grid-template-columns:120px 1fr 64px;align-items:center;gap:40px}.header-logo-placeholder{width:88px;height:56px;border:1px dashed #777;display:grid;place-items:center;text-transform:uppercase;letter-spacing:.12em;font-size:10px;font-weight:700}.primary-nav{display:flex;align-items:center;gap:clamp(28px,4.2vw,76px);text-transform:uppercase;font-size:13px;font-weight:700}.primary-nav a{white-space:nowrap}.primary-nav a[aria-current="page"],.primary-nav a:hover{text-decoration:underline;text-underline-offset:6px}.search-button{width:52px;height:52px;border:1px solid var(--ink);border-radius:50%;background:var(--paper);display:grid;place-items:center;justify-self:end}.search-button svg{width:22px;fill:none;stroke:currentColor;stroke-width:1.5}.menu-button{display:none;border:1px solid var(--ink);background:var(--paper);padding:12px 16px;text-transform:uppercase;letter-spacing:.08em;font-size:11px;font-weight:700}
+    main{width:100%}.module{position:relative;border-bottom:1px solid var(--line)}.module-tag{position:absolute;top:18px;right:18px;z-index:5;min-width:176px;min-height:30px;padding:6px 10px;border:1px solid var(--ink);background:var(--paper);display:inline-flex;justify-content:center;align-items:center;white-space:nowrap;letter-spacing:.08em;font-size:10px;font-weight:700}.section-inner{width:100%;max-width:var(--content-max);margin-inline:auto;padding:var(--section-y) var(--page-pad)}.section-intro{max-width:840px}h1,h2,h3,p{margin-top:0}h1,h2,h3{text-transform:uppercase;overflow-wrap:normal;word-break:normal;hyphens:none;text-wrap:balance}h1{margin-bottom:var(--heading-copy-gap);font-family:var(--font-flare);font-size:clamp(56px,7vw,108px);line-height:.94;letter-spacing:-.045em;font-weight:400}h2{margin-bottom:var(--heading-copy-gap);font-family:var(--font-flare);font-size:clamp(42px,5.2vw,76px);line-height:.98;letter-spacing:-.04em;font-weight:400}h3{margin-bottom:12px;font-size:18px;line-height:1.2;letter-spacing:.02em}p{margin-bottom:0;color:var(--muted);font-size:16px;line-height:1.65}.body-copy{max-width:720px;text-wrap:pretty}.body-copy p+p{margin-top:16px}
+    .media-placeholder{position:relative;min-height:420px;border:1px solid var(--line);background:repeating-linear-gradient(135deg,#fff 0,#fff 16px,#f2f2f2 16px,#f2f2f2 32px);overflow:hidden;display:grid;place-items:center}.media-placeholder:before,.media-placeholder:after{content:"";position:absolute;top:50%;left:50%;width:150%;height:1px;background:var(--line);transform-origin:center}.media-placeholder:before{transform:translate(-50%,-50%) rotate(28deg)}.media-placeholder:after{transform:translate(-50%,-50%) rotate(-28deg)}.media-label{position:relative;z-index:2;max-width:82%;padding:10px 14px;background:var(--paper);text-align:center;text-transform:uppercase;letter-spacing:.08em;font-size:11px;font-weight:800;line-height:1.45}
+    .overview-media{min-height:min(70vh,760px);aspect-ratio:16/9;border-width:0 0 1px}.overview-copy{max-width:1180px;margin-inline:auto;padding:clamp(76px,8vw,118px) var(--page-pad) clamp(64px,7vw,100px);text-align:center}.overview-copy .overview-body{max-width:940px;margin-inline:auto}.overview-body p+p{margin-top:18px}.statement-grid{max-width:var(--content-max);margin-inline:auto;padding:0 var(--page-pad) clamp(84px,9vw,130px);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;gap:20px}.statement-card{min-width:0;border:1px solid var(--ink);display:grid;grid-template-rows:auto 1fr}.statement-media{min-height:0;aspect-ratio:16/9;border-width:0 0 1px}.statement-copy{padding:30px 34px 36px;display:grid;align-content:start;gap:18px}.statement-copy span{text-transform:uppercase;letter-spacing:.1em;font-size:10px;font-weight:800;line-height:1}.statement-copy h3{max-width:560px;margin:0;font-family:var(--font-flare);font-size:clamp(28px,3vw,46px);font-weight:400;line-height:1;text-transform:uppercase}
+    .intro-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:start;gap:clamp(50px,8vw,120px)}.intro-grid h2{margin-bottom:0}.intro-grid .body-copy{padding-top:4px}.timeline-shell{margin-top:clamp(64px,8vw,112px);overflow:hidden}.timeline-layout{display:flex;min-width:0;flex-direction:column}.timeline-years{order:1;width:100%;overflow-x:auto;overflow-y:hidden;border-top:1px solid var(--ink);border-bottom:1px solid var(--line);scrollbar-width:none}.timeline-years::-webkit-scrollbar,.timeline-track::-webkit-scrollbar{display:none}.timeline-year-nav{display:flex;width:max-content;min-width:100%;align-items:center;gap:clamp(22px,3vw,44px);padding:20px 2px}.timeline-year-link{flex:0 0 auto;color:#666;font-family:var(--font-flare);font-size:17px;line-height:1;transition:font-size .2s ease,color .2s ease}.timeline-year-link.is-active{color:var(--ink);font-size:34px}.timeline-year-link:focus-visible{outline:1px solid var(--ink);outline-offset:5px}.timeline-stage{order:2;position:relative;min-width:0}.timeline-track{display:grid;grid-auto-flow:column;grid-auto-columns:100%;min-width:0;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;overscroll-behavior-inline:contain}.timeline-card{position:relative;min-width:0;min-height:620px;padding:clamp(44px,5vw,76px) 0 12px;display:grid;grid-template-columns:minmax(120px,.22fr) minmax(0,.78fr);align-content:start;scroll-snap-align:start;scroll-snap-stop:always}.timeline-card:before{content:attr(data-year);position:absolute;z-index:0;left:0;top:clamp(70px,8vw,118px);color:#ededed;font-family:var(--font-flare);font-size:clamp(94px,12vw,176px);font-weight:400;line-height:.8;letter-spacing:-.05em;writing-mode:vertical-rl;transform:rotate(180deg);pointer-events:none}.timeline-media{z-index:1;grid-column:2;min-height:clamp(380px,38vw,590px);border:1px solid var(--line)}.timeline-card-copy{z-index:1;grid-column:2;padding:24px 0 0}.year{display:block;margin-bottom:8px;font-family:var(--font-ui);font-size:12px;font-weight:800;letter-spacing:.08em;line-height:1}.timeline-card h3{max-width:860px;margin-bottom:10px;font-family:var(--font-flare);font-size:clamp(24px,2.5vw,38px);font-weight:400;line-height:1.08}.timeline-card p{max-width:780px;font-size:15px;line-height:1.6}.timeline-edge-control{position:absolute;z-index:7;top:50%;width:52px;height:52px;border:1px solid var(--ink);border-radius:50%;background:rgba(255,255,255,.96);display:grid;place-items:center;transform:translateY(-50%);font-size:24px;line-height:1;cursor:pointer;box-shadow:0 3px 16px rgba(0,0,0,.12)}.timeline-edge-control.prev{left:14px}.timeline-edge-control.next{right:14px}.timeline-edge-control:disabled{opacity:.22;cursor:default}.timeline-edge-control:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+    .feature-grid{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);align-items:center;gap:clamp(48px,7vw,110px)}.feature-grid.reverse{grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr)}.feature-grid.reverse .feature-media{order:1}.feature-grid.reverse .feature-copy{order:2}.feature-copy,.feature-media{min-width:0}.feature-media .media-placeholder{min-height:clamp(500px,48vw,700px)}
+    .culture-groups{margin-top:clamp(54px,7vw,90px)}.culture-group+.culture-group{margin-top:54px}.group-label{padding-bottom:16px;border-bottom:1px solid var(--ink);text-transform:uppercase;letter-spacing:.1em;font-size:11px;font-weight:800}.principle-grid{margin-top:18px;display:grid;gap:16px}.principle-grid.values{grid-template-columns:repeat(auto-fit,minmax(min(100%,188px),1fr))}.principle-grid.leadership{grid-template-columns:repeat(2,minmax(0,1fr))}.principle-card{min-height:268px;padding:22px 18px;border:1px solid var(--ink);display:flex;flex-direction:column;gap:16px;min-width:0;overflow:hidden}.principle-icon{flex:0 0 auto;width:52px;height:52px;border:1px dashed #777;display:grid;place-items:center;text-transform:uppercase;letter-spacing:.08em;font-size:8px;font-weight:800;line-height:1}.principle-body{margin-top:auto;display:grid;gap:10px;min-width:0}.principle-card h3{margin:0;font-size:clamp(11px,.7vw + .4rem,14px);line-height:1.28;overflow-wrap:break-word;hyphens:auto}.principle-card p{font-size:13px;line-height:1.55}.leadership-card{min-height:240px}.leadership-card h3{font-size:clamp(14px,1.2vw,16px)}
+    .commitment-grid{margin-top:clamp(52px,7vw,92px);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:24px}.commitment-card{position:relative;min-height:680px;border:1px solid var(--ink);overflow:hidden;background:repeating-linear-gradient(135deg,#fff 0,#fff 18px,#eee 18px,#eee 36px)}.commitment-card:before,.commitment-card:after{content:"";position:absolute;top:50%;left:50%;width:150%;height:1px;background:var(--line)}.commitment-card:before{transform:translate(-50%,-50%) rotate(32deg)}.commitment-card:after{transform:translate(-50%,-50%) rotate(-32deg)}.commitment-card>.media-label{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}.commitment-copy{position:absolute;z-index:3;left:24px;right:24px;bottom:24px;padding:30px;background:rgba(255,255,255,.94);border:1px solid var(--ink)}.commitment-copy h3,.sustainability-copy h3{font-family:var(--font-flare);font-size:clamp(34px,4vw,56px);font-weight:400;margin-bottom:14px}.commitment-copy p,.sustainability-copy p{max-width:620px;font-size:14px;line-height:1.55}.sustainability-pathway{min-width:0;border:1px solid var(--ink);display:flex;flex-direction:column}.sustainability-video{aspect-ratio:16/9;width:100%;min-height:clamp(300px,34vw,520px);border-width:0 0 1px}.sustainability-copy{padding:30px 30px 34px;display:flex;flex-direction:column;align-items:flex-start}.sustainability-cta{margin-top:var(--copy-cta-gap);min-height:46px;padding:12px 20px;border:1px solid var(--ink);display:inline-flex;align-items:center;justify-content:center;text-transform:uppercase;font-size:11px;font-weight:800;letter-spacing:.06em;white-space:nowrap}
+    footer{padding:70px var(--page-pad) 32px}.footer-top{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;padding-bottom:34px;border-bottom:1px solid var(--line)}.footer-brand{display:inline-flex;flex-direction:column;gap:5px;text-transform:uppercase;font-size:11px;font-weight:800}.footer-brand .brand-mark{width:72px;height:48px;border:2px solid var(--ink);border-radius:40px 40px 0 0;display:grid;place-items:center}.footer-top p{max-width:390px;text-align:right;font-size:13px}.footer-grid{padding:48px 0 70px;display:grid;grid-template-columns:repeat(4,1fr);gap:30px}.footer-grid div{display:flex;flex-direction:column;gap:13px}.footer-grid strong{margin-bottom:10px;text-transform:uppercase;letter-spacing:.1em;font-size:11px}.footer-grid a{font-size:13px}.footer-bottom{padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:#333;font-size:10px}
+    @media(max-width:1100px){.site-header{grid-template-columns:1fr auto}.primary-nav,.search-button{display:none}.menu-button{display:block}.feature-grid,.feature-grid.reverse,.intro-grid{grid-template-columns:1fr;gap:42px}.feature-grid.reverse .feature-media,.feature-grid.reverse .feature-copy{order:initial}.principle-grid.values{grid-template-columns:repeat(2,minmax(0,1fr))}.timeline-card{grid-template-columns:100px minmax(0,1fr)}}
+    @media(max-width:700px){:root{--page-pad:clamp(20px,6.5vw,26px);--section-y:88px;--heading-copy-gap:14px;--copy-cta-gap:22px}html,body,main{width:100%;max-width:100%;overflow-x:hidden}.utility-bar{display:none}.site-header{min-height:78px;padding-top:10px;padding-bottom:10px}.header-logo-placeholder{width:70px;height:44px}.module,.module>*,.feature-grid>*,.section-intro{min-width:0;max-width:100%}.module-tag{top:14px;right:14px;min-width:132px;max-width:calc(100% - 28px);width:auto;min-height:28px;padding:5px 8px;font-size:9px}h1{max-width:100%;font-size:clamp(44px,13.5vw,62px);line-height:.98}h2{max-width:100%;font-size:clamp(36px,11vw,52px);line-height:1}h3{font-size:16px}p{font-size:15px;line-height:1.58}.overview-media{min-height:54vh;aspect-ratio:auto}.overview-copy{text-align:center;padding-top:96px}.overview-copy .overview-body{margin-inline:auto}.overview-body p+p{margin-top:16px}.statement-grid{grid-template-columns:1fr}.statement-media{aspect-ratio:4/3}.statement-copy{padding:24px}.timeline-shell{margin-top:54px}.timeline-years{width:100%}.timeline-year-nav{gap:22px;padding:15px 2px}.timeline-year-link{font-size:15px;white-space:nowrap}.timeline-year-link.is-active{font-size:23px}.timeline-track{width:100%;grid-auto-columns:100%}.timeline-card{min-height:0;display:block;padding:76px 0 8px}.timeline-card:before{top:18px;left:0;font-size:82px;line-height:.8;writing-mode:horizontal-tb;transform:none}.timeline-media{width:100%;min-height:300px}.timeline-card-copy{padding:20px 0 0}.timeline-card h3{font-size:28px}.timeline-card p{font-size:14px}.timeline-edge-control{top:46%;width:46px;height:46px}.timeline-edge-control.prev{left:8px}.timeline-edge-control.next{right:8px}.feature-media .media-placeholder{min-height:430px}.principle-grid.values,.principle-grid.leadership,.commitment-grid{grid-template-columns:1fr}.principle-card,.leadership-card{min-height:190px;padding:24px}.commitment-card{min-height:540px}.commitment-copy{left:16px;right:16px;bottom:16px;padding:24px}.sustainability-copy{padding:24px 24px 28px}.sustainability-video{min-height:min(56vw,360px)}.sustainability-cta{width:100%}.footer-top{align-items:flex-start;flex-direction:column}.footer-top p{text-align:left}.footer-grid{grid-template-columns:repeat(2,1fr)}.footer-bottom{flex-direction:column;gap:10px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.header-shell{transition:none}}
+#milestones{--milestone-card-width:min(860px,88%);--milestone-peek-gap:clamp(12px,2.8vw,32px)}#milestones .milestones-intro,#milestones .section-intro{max-width:none;width:100%}#milestones .milestones-intro h2,#milestones .section-intro h2{margin-bottom:var(--heading-copy-gap)}#milestones .milestones-intro .body-copy,#milestones .section-intro .body-copy{max-width:none}#milestones .timeline-shell{margin-top:clamp(20px,3vw,32px);overflow:visible}#milestones .timeline-layout{display:flex;flex-direction:column;gap:0}#milestones .timeline-stage{order:1;position:relative;margin-inline:calc(-1 * var(--page-pad));padding-inline:clamp(60px,5vw,88px);overflow:visible}#milestones .milestone-scrubber{order:2;margin-top:clamp(12px,2vw,20px);padding-top:0;border-top:0;width:100%;overflow:visible}#milestones .milestone-scrubber-rail{position:relative;overflow-x:auto;overflow-y:visible;scrollbar-width:none;padding-top:38px}#milestones .milestone-scrubber-rail::-webkit-scrollbar{display:none}#milestones .milestone-scrubber-callout{position:absolute;top:0;left:0;transform:translateX(-50%);padding:7px 11px;background:var(--ink);color:var(--paper);font-size:12px;font-weight:800;letter-spacing:.05em;line-height:1;pointer-events:none;transition:left .22s ease;white-space:nowrap}#milestones .milestone-scrubber-track{align-items:flex-end;gap:clamp(18px,2.8vw,32px);padding:22px 2px 6px;border-top:1px solid var(--ink)}#milestones .timeline-year-link{position:relative;color:#666;font-size:14px;line-height:1;padding:0 0 2px;transition:color .2s ease}#milestones .timeline-year-link::before{content:"";position:absolute;top:-27px;left:50%;transform:translateX(-50%);width:11px;height:11px;border:1px solid var(--ink);border-radius:50%;background:var(--paper);box-sizing:border-box}#milestones .timeline-year-link.is-active{color:var(--ink);font-size:14px}#milestones .timeline-year-link.is-active::before{background:var(--ink)}#milestones .timeline-track{grid-auto-columns:var(--milestone-card-width);gap:var(--milestone-peek-gap);scroll-snap-type:x mandatory;scroll-padding-inline:calc((100% - var(--milestone-card-width))/2);padding-inline:calc((100% - var(--milestone-card-width))/2);align-items:stretch}#milestones .timeline-card{min-height:0;padding:0;display:block;scroll-snap-align:center;scroll-snap-stop:normal;opacity:1;filter:none;transform:scale(1);transition:opacity .28s ease,transform .28s ease,filter .28s ease}#milestones .timeline-card:not(.is-focus){opacity:.4;filter:saturate(.8);transform:scale(.97)}#milestones .timeline-card.is-focus{opacity:1;filter:none;transform:scale(1)}#milestones .timeline-card:before{display:none}#milestones .timeline-card-inner{border:1px solid var(--ink);background:var(--paper);display:flex;flex-direction:column;gap:clamp(14px,2vw,22px);padding:clamp(18px,2.6vw,34px);height:100%;min-width:0}#milestones .timeline-card-year{margin:0;font-family:var(--font-flare);font-size:clamp(48px,8.5vw,84px);line-height:.94;letter-spacing:-.04em;font-weight:400;color:var(--ink)}#milestones .timeline-card-head h3{margin:clamp(6px,1vw,10px) 0 0;font-family:var(--font-ui);font-size:clamp(10px,1vw,12px);font-weight:800;letter-spacing:.14em;line-height:1.35;text-transform:uppercase;color:var(--muted);max-width:none}#milestones .timeline-media{width:100%;min-height:0;aspect-ratio:16/9;border:1px solid var(--line)}#milestones .timeline-media.media-placeholder{min-height:0}#milestones .timeline-card-body{margin:0;font-size:clamp(14px,1.05vw,16px);line-height:1.6;color:var(--muted);max-width:none}#milestones .timeline-edge-control{display:grid;top:42%;z-index:9;width:52px;height:52px}#milestones .timeline-edge-control.prev{left:6px}#milestones .timeline-edge-control.next{right:6px}@media(min-width:701px){#milestones{--milestone-card-width:min(820px,74%)}#milestones .timeline-edge-control.prev{left:0}#milestones .timeline-edge-control.next{right:0}}@media(max-width:700px){#milestones{--milestone-card-width:min(100%,92%)}#milestones .timeline-shell{margin-top:24px}#milestones .timeline-stage{padding-inline:clamp(48px,var(--page-pad),56px)}#milestones .timeline-edge-control{top:36%;width:44px;height:44px}#milestones .timeline-edge-control.prev{left:2px}#milestones .timeline-edge-control.next{right:2px}}
+.media-gallery{position:relative;min-width:0}.media-gallery-track{display:grid;grid-auto-flow:column;grid-auto-columns:100%;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;overscroll-behavior-inline:contain}.media-gallery-track::-webkit-scrollbar{display:none}.media-gallery-slide{width:100%;aspect-ratio:16/9;min-height:0;scroll-snap-align:start;scroll-snap-stop:always}.feature-media .media-gallery-slide{aspect-ratio:16/9;min-height:0}.feature-media .media-placeholder.media-gallery-slide{min-height:0}.media-gallery-control{position:absolute;z-index:2;top:50%;width:52px;height:52px;border:1px solid var(--ink);border-radius:50%;background:rgba(255,255,255,.96);display:grid;place-items:center;transform:translateY(-50%);font-size:24px;line-height:1;cursor:pointer;box-shadow:0 3px 16px rgba(0,0,0,.12)}.media-gallery-control.prev{left:14px}.media-gallery-control.next{right:14px}.media-gallery-control:disabled{opacity:.22;cursor:default}.media-gallery-control:focus-visible{outline:2px solid var(--ink);outline-offset:3px}.media-gallery-dots{margin-top:16px;display:flex;justify-content:center;align-items:center;gap:10px}.media-gallery-dot{width:10px;height:10px;padding:0;border:1px solid var(--ink);border-radius:50%;background:var(--paper);cursor:pointer}.media-gallery-dot.is-active{background:var(--ink)}.media-gallery-dot:focus-visible{outline:2px solid var(--ink);outline-offset:2px}.media-gallery-slide--video:before,.media-gallery-slide--video:after{display:none}.media-gallery-video{position:absolute;inset:0;z-index:1;width:100%;height:100%;object-fit:cover;background:#111}.media-gallery-play{position:absolute;z-index:3;top:50%;left:50%;width:64px;height:64px;border:1px solid var(--ink);border-radius:50%;background:rgba(255,255,255,.96);display:grid;place-items:center;transform:translate(-50%,-50%);font-size:22px;line-height:1;cursor:pointer;box-shadow:0 3px 16px rgba(0,0,0,.12)}.media-gallery-play:focus-visible{outline:2px solid var(--ink);outline-offset:3px}.media-gallery-slide--video.is-playing .media-gallery-play{opacity:0;pointer-events:none}.media-gallery-slide--video.is-playing .media-label{opacity:0}@media(max-width:700px){.media-gallery-control{width:46px;height:46px}.media-gallery-control.prev{left:8px}.media-gallery-control.next{right:8px}.media-gallery-slide .media-label{max-width:100%;overflow-wrap:anywhere}.feature-media .media-gallery-slide{min-height:0}}
+</style>
+<style>
+/* Simplified Chinese typography and natural line wrapping */
+:root{--font-flare:"ABC Arizona Flare","ABC-Arizona-Flare","Noto Serif SC","Songti SC","SimSun",serif;--font-ui:Arial,"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif}
+html[lang="zh-Hans"] h1,html[lang="zh-Hans"] h2,html[lang="zh-Hans"] h3{letter-spacing:0;line-height:1.3;word-break:normal;overflow-wrap:break-word;text-wrap:pretty}
+.body-copy,.overview-body,.statement-copy,.principle-body{min-width:0;line-break:strict;overflow-wrap:break-word}
+.module-tag{white-space:normal;width:max-content;min-width:0}
+.media-label{max-width:100%;overflow-wrap:break-word}
+.commitment-copy{position:relative;left:auto;right:auto;bottom:auto;margin:260px 24px 24px}
+.commitment-card{min-height:0}
+.timeline-card-head h3{font-variant-numeric:tabular-nums}
+@media(max-width:700px){h1{font-size:clamp(32px,9vw,46px)}h2{font-size:clamp(28px,8vw,40px)}.statement-copy h3{font-size:28px}.commitment-copy{margin:220px 16px 16px;padding:24px}.module-tag{max-width:calc(100% - 28px)}}
+</style></head>
+<body id="top">
+  <header class="header-shell"><div class="utility-bar"><a href="#">消费者网站</a><button aria-label="浏览内容"><span aria-hidden="true">◎</span> 简体中文 <span aria-hidden="true">⌄</span></button></div><div class="site-header"><a href="#top" aria-label="浏览内容"><span class="header-logo-placeholder">标志占位</span></a><nav class="primary-nav" aria-label="主导航"><a href="#top" aria-current="page">关于我们</a><a href="#">我们的业务</a><a href="#">企业新闻</a><a href="#">加入我们</a><a href="#">联系我们</a></nav><button class="search-button" aria-label="搜索"><svg viewbox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m15.5 15.5 5 5"></path></svg></button><button class="menu-button" aria-label="打开菜单">菜单</button></div></header>
+  <main>
+    <section class="module" id="company-overview" aria-labelledby="overview-title"><span class="module-tag">01 公司概况</span><div class="media-placeholder overview-media" role="img" aria-label="图片或视频占位"><span class="media-label">16:9 品牌传承图片或影片占位<br>品牌起源 + 家庭时刻 + 全球足迹</span></div><div class="overview-copy"><h1 id="overview-title">百年传承</h1><div class="overview-body"><p>1888年，李锦裳先生在中国广东珠海南水镇发明蚝油，并创立李锦记，由此开启了一段以一锅蚝油写就的传奇历程。</p><p>自此，李锦记的味道便成为无数家庭代代相传的餐桌记忆。如今，我们已成长为享誉全球的优质与信赖品牌。</p><p>秉持「思利及人」、「务实精神」、「永远创业精神」及「100-1=0」的价值观，并以「自动波领导模式」与「引领变革」为行动准则，李锦记跨越三个世纪屹立不倒。我们以中国香港为总部，连接世界，业务依托中国新会、黄埔及济宁、美国洛杉矶与纽南，以及马来西亚吉隆坡的生产基地稳健发展。</p><p>以「发扬中华优秀饮食文化」为使命，李锦记为全球100多个国家及地区的消费者提供超过300款产品。立足丰厚传承，坚守品质、卓越与可持续发展，我们始终以消费者需求为先，不断创新，将正宗风味带到世界各地。</p></div></div><div class="statement-grid"><article class="statement-card"><div class="media-placeholder statement-media" role="img" aria-label="图片或视频占位"><span class="media-label">愿景图片占位<br>人们 + 餐桌相聚 + 全球连接</span></div><div class="statement-copy"><span>我们的愿景</span><h3>有人的地方，就有李锦记</h3></div></article><article class="statement-card"><div class="media-placeholder statement-media" role="img" aria-label="图片或视频占位"><span class="media-label">使命图片占位<br>中华饮食文化 + 全球交流</span></div><div class="statement-copy"><span>我们的使命</span><h3>发扬中华优秀饮食文化</h3></div></article></div></section>
+    <section class="module" id="milestones" aria-labelledby="milestones-title"><span class="module-tag">02 里程碑</span><div class="section-inner"><div class="section-intro milestones-intro"><h2 id="milestones-title">改变历史的重要时刻</h2><p class="body-copy">我们的里程碑不仅是日期。它们共同展现了李锦记如何应对市场变化、持续投资于品质与生产、将知识代代相传，并开辟酱料连接文化的新路径。探索那些推动公司从一个篇章走向下一个篇章的决策、突破与合作。</p></div><div class="timeline-shell" aria-label="浏览里程碑"><div class="timeline-layout"><div class="timeline-stage"><div class="timeline-track" id="timeline-track" tabindex="0" role="region" aria-roledescription="轮播" aria-label="浏览里程碑"><article class="timeline-card is-focus" aria-label="1888年里程碑">
+  <div class="timeline-card-inner">
+    <header class="timeline-card-head">
+      <h3>1888</h3>
+    </header>
+    <div class="media-placeholder timeline-media" role="img" aria-label="1888年历史图片占位"><span class="media-label">历史图片占位<br>1888</span></div>
+    <p class="timeline-card-body">李锦记创办人李锦裳先生在中国广东省珠海南水镇发明蚝油，并成立李锦记，生产及销售蚝油和虾酱两种产品。</p>
+  </div>
+</article>
+<article class="timeline-card" aria-label="1902年里程碑">
+  <div class="timeline-card-inner">
+    <header class="timeline-card-head">
+      <h3>1902</h3>
+    </header>
+    <div class="media-placeholder timeline-media" role="img" aria-label="1902年历史图片占位"><span class="media-label">历史图片占位<br>1902</span></div>
+    <p class="timeline-card-body">李锦记酱料迁往中国澳门，建立横跨广东及中国香港的分销网络。</p>
+  </div>
+</article>
+<article class="timeline-card" aria-label="1920年里程碑">
+  <div class="timeline-card-inner">
+    <header class="timeline-card-head">
+      <h3>1920</h3>
+    </header>
+    <div class="media-placeholder timeline-media" role="img" aria-label="1920年历史图片占位"><span class="media-label">历史图片占位<br>1920</span></div>
+    <p class="timeline-card-body">李氏家族第二代李兆南先生接手管理家族业务。李锦记透过金山庄开始把蚝油销往美国。</p>
+  </div>
+</article>
+<article class="timeline-card" aria-label="1932年里程碑">
+  <div class="timeline-card-inner">
+    <header class="timeline-card-head">
+      <h3>1932</h3>
+    </header>
+    <div class="media-placeholder timeline-media" role="img" aria-label="1932年历史图片占位"><span class="media-label">历史图片占位<br>1932</span></div>
+    <p class="timeline-card-body">李锦记总部迁往中国香港。在中环皇后大道中262号设立办事处，以切合日益增长的海外市场。</p>
+  </div>
+</article>
+<article class="timeline-card" aria-label="1972年里程碑">
+  <div class="timeline-card-inner">
+    <header class="timeline-card-head">
+      <h3>1972</h3>
+    </header>
+    <div class="media-placeholder timeline-media" role="img" aria-label="1972年历史图片占位"><span class="media-label">历史图片占位<br>1972</span></div>
+    <p class="timeline-card-body">李文达先生出任李锦记主席，制订了业务方针及拓展策略，为公司定下未来的发展方向。</p>
+  </div>
+</article>
+<article class="timeline-card" aria-label="1976年里程碑">
+  <div class="timeline-card-inner">
+    <header class="timeline-card-head">
+      <h3>1976</h3>
+    </header>
+    <div class="media-placeholder timeline-media" role="img" aria-label="1976年历史图片占位"><span class="media-label">历史图片占位<br>1976</span></div>
+    <p class="timeline-card-body">中国香港仔黄竹坑厂房启用，同时以蒸气及柴油取代柴火为生产能源。</p>
+  </div>
+</article>
+<article class="timeline-card" aria-label="1980年里程碑">
+  <div class="timeline-card-inner">
+    <header class="timeline-card-head">
+      <h3>1980</h3>
+    </header>
+    <div class="media-placeholder timeline-media" role="img" aria-label="1980年历史图片占位"><span class="media-label">历史图片占位<br>1980</span></div>
+    <p class="timeline-card-body">李文达先生的五位子女惠民、惠雄、惠中、惠森及美瑜在国外完成学业，相继加入李锦记，带领李锦记迈向现代化。</p>
+  </div>
+</article>
+<article class="timeline-card" aria-label="1988年里程碑">
+  <div class="timeline-card-inner">
+    <header class="timeline-card-head">
+      <h3>1988</h3>
+    </header>
+    <div class="media-placeholder timeline-media" role="img" aria-label="1988年历史图片占位"><span class="media-label">历史图片占位<br>1988</span></div>
+    <p class="timeline-card-body">李锦记将总部迁往中国香港大埔。同年推出全新企业商标，象征公司以酱料及调味品作桥梁，促进中西饮食文化交流。</p>
+  </div>
+</article>
+<article class="timeline-card" aria-label="1991年里程碑">
+  <div class="timeline-card-inner">
+    <header class="timeline-card-head">
+      <h3>1991</h3>
+    </header>
+    <div class="media-placeholder timeline-media" role="img" aria-label="1991年历史图片占位"><span class="media-label">历史图片占位<br>1991</span></div>
+    <p class="timeline-card-body">李锦记美国洛杉矶生产基地启用。</p>
+  </div>
+</article>
+<article class="timeline-card" aria-label="1995年里程碑">
+  <div class="timeline-card-inner">
+    <header class="timeline-card-head">
+      <h3>1995</h3>
+    </header>
+    <div class="media-placeholder timeline-media" role="img" aria-label="1995年历史图片占位"><span class="media-label">历史图片占位<br>1995</span></div>
+    <p class="timeline-card-body">李锦记荣获由香港品质保证局及英国标准协会颁发的ISO9002证书，成为全港首间取得此项国际品质保证的食品制造商。</p>
+  </div>
+</article>
+<article class="timeline-card" aria-label="1996年里程碑">
+  <div class="timeline-card-inner">
+    <header class="timeline-card-head">
+      <h3>1996</h3>
+    </header>
+    <div class="media-placeholder timeline-media" role="img" aria-label="1996年历史图片占位"><span class="media-label">历史图片占位<br>1996</span></div>
+    <p class="timeline-card-body">为拓展中国内地业务，李锦记在中国广东省江门市新会七堡镇设立生产基地。</p>
+  </div>
+</article>
+<article class="timeline-card" aria-label="1997年里程碑">
+  <div class="timeline-card-inner">
+    <header class="timeline-card-head">
+      <h3>1997</h3>
+    </header>
+    <div class="media-placeholder timeline-media" role="img" aria-label="1997年历史图片占位"><span class="media-label">历史图片占位<br>1997</span></div>
+    <p class="timeline-card-body">李锦记马来西亚吉隆坡生产基地启用。</p>
+  </div>
+</article>
+<article class="timeline-card" aria-label="1998年里程碑">
+  <div class="timeline-card-inner">
+    <header class="timeline-card-head">
+      <h3>1998</h3>
+    </header>
+    <div class="media-placeholder timeline-media" role="img" aria-label="1998年历史图片占位"><span class="media-label">历史图片占位<br>1998</span></div>
+    <p class="timeline-card-body">李锦记中国广东省广州黄埔生产基地启用。</p>
+  </div>
+</article>
+<article class="timeline-card" aria-label="2008年里程碑">
+  <div class="timeline-card-inner">
+    <header class="timeline-card-head">
+      <h3>2008</h3>
+    </header>
+    <div class="media-placeholder timeline-media" role="img" aria-label="2008年历史图片占位"><span class="media-label">历史图片占位<br>2008</span></div>
+    <p class="timeline-card-body">李锦记成为北京奥运指定餐饮供应企业。</p>
+  </div>
+</article>
+<article class="timeline-card" aria-label="2010年里程碑">
+  <div class="timeline-card-inner">
+    <header class="timeline-card-head">
+      <h3>2010</h3>
+    </header>
+    <div class="media-placeholder timeline-media" role="img" aria-label="2010年历史图片占位"><span class="media-label">历史图片占位<br>2010</span></div>
+    <p class="timeline-card-body">李锦记成为上海世博会官方餐饮原辅材料供应企业。</p>
+  </div>
+</article>
+<article class="timeline-card" aria-label="2019年里程碑">
+  <div class="timeline-card-inner">
+    <header class="timeline-card-head">
+      <h3>2019</h3>
+    </header>
+    <div class="media-placeholder timeline-media" role="img" aria-label="2019年历史图片占位"><span class="media-label">历史图片占位<br>2019</span></div>
+    <p class="timeline-card-body">为进一步开拓北方市场，李锦记在中国山东省济宁市设立生产基地。</p>
+  </div>
+</article>
+<article class="timeline-card" aria-label="2020年里程碑">
+  <div class="timeline-card-inner">
+    <header class="timeline-card-head">
+      <h3>2020</h3>
+    </header>
+    <div class="media-placeholder timeline-media" role="img" aria-label="2020年历史图片占位"><span class="media-label">历史图片占位<br>2020</span></div>
+    <p class="timeline-card-body">李锦记酱料新会生产基地获美国绿色建筑委员会颁发"能源与环境设计先锋评级体系（LEED）"铂金认证，成为全球发酵食品行业中首家获此殊荣的企业。</p>
+  </div>
+</article>
+<article class="timeline-card" aria-label="2021年里程碑">
+  <div class="timeline-card-inner">
+    <header class="timeline-card-head">
+      <h3>2021</h3>
+    </header>
+    <div class="media-placeholder timeline-media" role="img" aria-label="2021年历史图片占位"><span class="media-label">历史图片占位<br>2021</span></div>
+    <p class="timeline-card-body">新会生产基地人工湿地公园正式投入运作，李锦记成为中国江门市首家采用人工湿地技术的食品企业。</p>
+  </div>
+</article>
+<article class="timeline-card" aria-label="2022年里程碑">
+  <div class="timeline-card-inner">
+    <header class="timeline-card-head">
+      <h3>2022</h3>
+    </header>
+    <div class="media-placeholder timeline-media" role="img" aria-label="2022年历史图片占位"><span class="media-label">历史图片占位<br>2022</span></div>
+    <p class="timeline-card-body">李锦记蚝油制作技艺列入广东省第八批省级非物质文化遗产代表性项目名录，而李锦记亦入选为此非遗项目的保护单位。</p>
+  </div>
+</article>
+<article class="timeline-card" aria-label="2024年里程碑">
+  <div class="timeline-card-inner">
+    <header class="timeline-card-head">
+      <h3>2024</h3>
+    </header>
+    <div class="media-placeholder timeline-media" role="img" aria-label="2024年历史图片占位"><span class="media-label">历史图片占位<br>2024</span></div>
+    <p class="timeline-card-body">李锦记宣布与"世界50最佳餐厅"展开全球合作，成为其首个酱料及调味品类的独家官方合作伙伴。</p>
+  </div>
+</article>
+<article class="timeline-card" aria-label="2025年里程碑">
+  <div class="timeline-card-inner">
+    <header class="timeline-card-head">
+      <h3>2025</h3>
+    </header>
+    <div class="media-placeholder timeline-media" role="img" aria-label="2025年历史图片占位"><span class="media-label">历史图片占位<br>2025</span></div>
+    <p class="timeline-card-body">美国纽南生产基地正式启用，成为李锦记在美国的首间酱油厂房。</p>
+  </div>
+</article>
+<article class="timeline-card" aria-label="2025年里程碑">
+  <div class="timeline-card-inner">
+    <header class="timeline-card-head">
+      <h3>2025</h3>
+    </header>
+    <div class="media-placeholder timeline-media" role="img" aria-label="2025年历史图片占位"><span class="media-label">历史图片占位<br>2025</span></div>
+    <p class="timeline-card-body">李锦记酱料第十三度登上太空，成为"神舟二十号"及 "神舟二十一号"太空人的佐餐酱料。</p>
+  </div>
+</article>
+<article class="timeline-card" aria-label="2026年里程碑">
+  <div class="timeline-card-inner">
+    <header class="timeline-card-head">
+      <h3>2026</h3>
+    </header>
+    <div class="media-placeholder timeline-media" role="img" aria-label="2026年历史图片占位"><span class="media-label">历史图片占位<br>2026</span></div>
+    <p class="timeline-card-body">李锦记与联合国教科文组织合作开展"忘不了的味道·档案计划"，建立"全球味道记忆档案库"。</p>
+  </div>
+</article></div><button class="timeline-edge-control prev" type="button" data-direction="-1" aria-label="上一项">←</button><button class="timeline-edge-control next" type="button" data-direction="1" aria-label="下一项">→</button></div><aside class="milestone-scrubber timeline-years" aria-label="浏览里程碑"><div class="milestone-scrubber-rail" id="milestone-scrubber-rail"><span class="milestone-scrubber-callout" id="milestone-scrubber-callout" aria-hidden="true">1888</span><nav class="timeline-year-nav milestone-scrubber-track"><a class="timeline-year-link is-active" href="#year-1888">1888</a><a class="timeline-year-link" href="#year-1902">1902</a><a class="timeline-year-link" href="#year-1920">1920</a><a class="timeline-year-link" href="#year-1932">1932</a><a class="timeline-year-link" href="#year-1972">1972</a><a class="timeline-year-link" href="#year-1976">1976</a><a class="timeline-year-link" href="#year-1980">1980</a><a class="timeline-year-link" href="#year-1988">1988</a><a class="timeline-year-link" href="#year-1991">1991</a><a class="timeline-year-link" href="#year-1995">1995</a><a class="timeline-year-link" href="#year-1996">1996</a><a class="timeline-year-link" href="#year-1997">1997</a><a class="timeline-year-link" href="#year-1998">1998</a><a class="timeline-year-link" href="#year-2008">2008</a><a class="timeline-year-link" href="#year-2010">2010</a><a class="timeline-year-link" href="#year-2019">2019</a><a class="timeline-year-link" href="#year-2020">2020</a><a class="timeline-year-link" href="#year-2021">2021</a><a class="timeline-year-link" href="#year-2022">2022</a><a class="timeline-year-link" href="#year-2024">2024</a><a class="timeline-year-link" href="#year-2025">2025</a><a class="timeline-year-link" href="#year-2026">2026</a></nav></div></aside></div></div></div></section>
+    <section class="module" id="unesco" aria-labelledby="unesco-title"><span class="module-tag">03 联合国教科文组织</span><div class="section-inner"><div class="feature-grid"><div class="feature-copy"><h2 id="unesco-title">守护饮食文化遗产</h2><div class="body-copy"><p>饮食文化是李锦记使命的核心所在。通过与联合国教科文组织（UNESCO）的合作，我们正将这份承诺延伸至守护与传承世界各地的饮食文化遗产。</p><p>我们携手推出"风味传承计划"（Forever Flavors Project），旨在收集来自世界各地与美食相关的故事，建立一个风味记忆的档案库。此计划以味道作为连接不同文化与世代的桥梁，促进对话交流、加深情感连接，并帮助饮食知识与传统得以延续。</p><p>这次合作体现了我们对推广饮食文化的长期承诺。此举立基于共同的价值观与对文化遗产的尊重，展现出公私机构如何携手合作，共同支持文化保育与饮食文化遗产的持续传承。</p></div></div><div class="feature-media"><div class="media-gallery" aria-label="浏览图片及视频"><div class="media-gallery-track" tabindex="0" role="region" aria-roledescription="轮播" aria-label="浏览图片及视频"><div class="media-placeholder media-gallery-slide" data-media-type="image" role="img" aria-label="图片或视频占位"><span class="media-label">图片 1 — 纪录影像占位<br>代代相传的味道记忆</span></div><div class="media-placeholder media-gallery-slide media-gallery-slide--video" data-media-type="video" aria-label="浏览内容" aria-hidden="true"><video class="media-gallery-video" playsinline preload="none" muted></video><button class="media-gallery-play" type="button" aria-label="浏览内容"><span aria-hidden="true">▶</span></button><span class="media-label">视频 2 — 社区故事占位<br>16:9 影片 · 播放 + 字幕</span></div><div class="media-placeholder media-gallery-slide" data-media-type="image" role="img" aria-label="图片或视频占位" aria-hidden="true"><span class="media-label">图片 3 — 跨文化传承占位<br>以味道连接不同世代</span></div><div class="media-placeholder media-gallery-slide media-gallery-slide--video" data-media-type="video" aria-label="浏览内容" aria-hidden="true"><video class="media-gallery-video" playsinline preload="none" muted></video><button class="media-gallery-play" type="button" aria-label="浏览内容"><span aria-hidden="true">▶</span></button><span class="media-label">视频 4 — 合作实践占位<br>16:9 影片 · 播放 + 字幕</span></div></div><button class="media-gallery-control prev" type="button" data-direction="-1" aria-label="上一项">←</button><button class="media-gallery-control next" type="button" data-direction="1" aria-label="下一项">→</button><div class="media-gallery-dots" role="tablist" aria-label="浏览内容"><button class="media-gallery-dot is-active" type="button" role="tab" aria-selected="true" aria-label="浏览图片及视频"></button><button class="media-gallery-dot" type="button" role="tab" aria-selected="false" aria-label="浏览内容"></button><button class="media-gallery-dot" type="button" role="tab" aria-selected="false" aria-label="浏览图片及视频"></button><button class="media-gallery-dot" type="button" role="tab" aria-selected="false" aria-label="浏览内容"></button></div></div></div></div></div></section>
+    <section class="module" id="fifty-best" aria-labelledby="fifty-best-title"><span class="module-tag">04 世界50最佳餐厅</span><div class="section-inner"><div class="feature-grid reverse"><div class="feature-media"><div class="media-gallery" aria-label="浏览图片及视频"><div class="media-gallery-track" tabindex="0" role="region" aria-roledescription="轮播" aria-label="浏览图片及视频"><div class="media-placeholder media-gallery-slide" data-media-type="image" role="img" aria-label="图片或视频占位"><span class="media-label">图片 1 — 主厨合作占位<br>官方酱料及调味品合作伙伴</span></div><div class="media-placeholder media-gallery-slide media-gallery-slide--video" data-media-type="video" aria-label="浏览内容" aria-hidden="true"><video class="media-gallery-video" playsinline preload="none" muted></video><button class="media-gallery-play" type="button" aria-label="浏览内容"><span aria-hidden="true">▶</span></button><span class="media-label">视频 2 — 厨房协作占位<br>16:9 影片 · 播放 + 字幕</span></div><div class="media-placeholder media-gallery-slide" data-media-type="image" role="img" aria-label="图片或视频占位" aria-hidden="true"><span class="media-label">图片 3 — 全球交流占位<br>行业盛事与共同探索</span></div><div class="media-placeholder media-gallery-slide media-gallery-slide--video" data-media-type="video" aria-label="浏览内容" aria-hidden="true"><video class="media-gallery-video" playsinline preload="none" muted></video><button class="media-gallery-play" type="button" aria-label="浏览内容"><span aria-hidden="true">▶</span></button><span class="media-label">视频 4 — 风味创新占位<br>16:9 影片 · 播放 + 字幕</span></div></div><button class="media-gallery-control prev" type="button" data-direction="-1" aria-label="上一项">←</button><button class="media-gallery-control next" type="button" data-direction="1" aria-label="下一项">→</button><div class="media-gallery-dots" role="tablist" aria-label="浏览内容"><button class="media-gallery-dot is-active" type="button" role="tab" aria-selected="true" aria-label="浏览图片及视频"></button><button class="media-gallery-dot" type="button" role="tab" aria-selected="false" aria-label="浏览内容"></button><button class="media-gallery-dot" type="button" role="tab" aria-selected="false" aria-label="浏览图片及视频"></button><button class="media-gallery-dot" type="button" role="tab" aria-selected="false" aria-label="浏览内容"></button></div></div></div><div class="feature-copy"><h2 id="fifty-best-title">全球餐饮创意的交流平台</h2><p class="body-copy">李锦记是 The World's 50 Best Restaurants 首位独家官方酱料及调味品合作伙伴。这一合作让我们的酱料与烹饪专业能力，与正在塑造全球餐饮格局的主厨们展开深度对话。通过厨师交流、行业盛事与共同探索，我们更深入地了解专业厨房的运作方式，同时也为厨师们提供一个值得信赖的平台，让他们测试创意、重新诠释风味、为下一代食客打造美食体验。</p></div></div></div></section>
+    <section class="module" id="company-culture" aria-labelledby="culture-title"><span class="module-tag">05 企业文化</span><div class="section-inner"><div class="section-intro"><h2 id="culture-title">独具特色的企业文化</h2><div class="body-copy"><p>我们的文化是长远发展的基石。</p><p>李锦记的成长与行动体现了「价值观与领导力」的指导原则。这些原则世代相传，推动我们继续全球征程，并指引我们成为全球消费者喜爱与信赖的品牌。</p></div></div><div class="culture-groups"><div class="culture-group"><div class="group-label">我们的价值观</div><div class="principle-grid values"><article class="principle-card"><div class="principle-icon" aria-hidden="true">图标占位</div><div class="principle-body"><h3>思利及人</h3><p>换位思考，顾全大局，将他人利益置于己身之先。</p></div></article>
+<article class="principle-card"><div class="principle-icon" aria-hidden="true">图标占位</div><div class="principle-body"><h3>务实</h3><p>以事实为依据，坚持自律落实，专注于真正有意义的成果。</p></div></article>
+<article class="principle-card"><div class="principle-icon" aria-hidden="true">图标占位</div><div class="principle-body"><h3>诚信</h3><p>言出必行，处事公正，时刻坚守道德底线。</p></div></article>
+<article class="principle-card"><div class="principle-icon" aria-hidden="true">图标占位</div><div class="principle-body"><h3>永远创业</h3><p>敢于突破，勇于挑战常规，永不为进步设限。</p></div></article>
+<article class="principle-card"><div class="principle-icon" aria-hidden="true">图标占位</div><div class="principle-body"><h3>100-1=0</h3><p>视质量为生命线，一次疏忽足以毁掉过往所有努力。</p></div></article></div></div><div class="culture-group"><div class="group-label">我们的领导力</div><div class="principle-grid leadership"><article class="principle-card leadership-card"><div class="principle-icon" aria-hidden="true">图标占位</div><div class="principle-body"><h3>自动波领导力</h3><p>选对人才、凝聚共同目标、有效授权并用心教练，建立高信任度的团队。</p></div></article>
+<article class="principle-card leadership-card"><div class="principle-icon" aria-hidden="true">图标占位</div><div class="principle-body"><h3>引领变革</h3><p>以用户为中心，凭借敏捷应变与追求卓越的精神，将愿景化为行动。</p></div></article></div></div></div></div></section>
+    <section class="module" id="commitments" aria-labelledby="commitments-title"><span class="module-tag">06 我们的承诺</span><div class="section-inner"><div class="intro-grid"><h2 id="commitments-title">责任，如何落地为实践</h2><p class="body-copy">我们的承诺与运营方式密不可分。它们影响着我们制定的标准、做出的决策，以及在整个价值链中对人和环境的考量。两大理念最能体现这一做法：「100-1=0」——我们毫不妥协的品质理念，以及围绕产品诚信、环境保护、员工与社区的可持续发展议程。</p></div><div class="commitment-grid"><article class="commitment-card"><span class="media-label">背景图片占位<br>品质管控</span><div class="commitment-copy"><h3>100-1=0</h3><p>「100-1=0」意味着一次失误就足以抵消之前所有的成功。因此，这一理念要求每个部门——不只是品控团队——都要守护产品与服务的诚信。它指导我们如何评估原料与供应商、管控生产、检验成品、应对问题，以及持续改进每一件产品背后的体系。</p></div></article><article class="sustainability-pathway"><div class="media-placeholder sustainability-video" role="img" aria-label="图片或视频占位"><span class="media-label">16:9 可持续发展视频占位<br>播放按钮 + 字幕</span></div><div class="sustainability-copy"><h3>可持续发展</h3><p>负责任的增长要求我们超越产品本身来看问题。李锦记的可持续发展方略整合了产品诚信、环境保护、关爱员工与回馈社区四大支柱，为降低运营影响、增强业务及价值链的韧性、支持员工发展、回馈周边社区提供了统一的行动框架。</p><a class="sustainability-cta" href="#" download>下载报告</a></div></article></div></div></section>
+  </main>
+  <footer><div class="footer-top"><div class="footer-brand"><span class="brand-mark">LKK</span><span>李锦记</span></div><p>跨越百年，以味道连接彼此。</p></div><div class="footer-grid"><div><strong>关于我们</strong><a href="#company-overview">公司概况</a><a href="#milestones">里程碑</a><a href="#company-culture">企业文化</a><a href="#commitments">我们的承诺</a></div><div><strong>我们的业务</strong><a href="#">产品组合</a><a href="#">零售</a><a href="#">餐饮服务</a><a href="#">工业解决方案</a></div><div><strong>联系李锦记</strong><a href="#">新闻中心</a><a href="#">加入我们</a><a href="#">联系我们</a></div><div><strong>关注我们</strong><a href="#">LinkedIn</a><a href="#">YouTube</a><a href="#">微信</a></div></div><div class="footer-bottom"><span>© 李锦记。本页为线框图内容。</span><span>隐私政策 · 使用条款 · 无障碍访问</span></div></footer>
+  <script>(()=>{const header=document.querySelector('.header-shell');let previousY=window.scrollY;window.addEventListener('scroll',()=>{const currentY=window.scrollY;if(currentY<12||currentY<previousY)header.classList.remove('is-hidden');else if(currentY>previousY&&currentY>120)header.classList.add('is-hidden');previousY=currentY},{passive:true});const track=document.getElementById('timeline-track');const cards=[...track.querySelectorAll('.timeline-card')];cards.forEach((card,index)=>{card.dataset.year=card.querySelector('.timeline-card-year').textContent.trim();card.setAttribute('aria-posinset',String(index+1));card.setAttribute('aria-setsize',String(cards.length))});const firstByYear=new Map();cards.forEach(card=>{if(!firstByYear.has(card.dataset.year)){card.id=`year-${card.dataset.year}`;firstByYear.set(card.dataset.year,card)}});const rail=document.querySelector('#milestones .milestone-scrubber-rail');const links=[...document.querySelectorAll('#milestones .timeline-year-link')];const controls=[...document.querySelectorAll('#milestones .timeline-edge-control')];const callout=document.getElementById('milestone-scrubber-callout');const scrollBehaviour=matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth';let activeIndex=0;const positionCallout=link=>{if(!callout||!link||!rail)return;const railRect=rail.getBoundingClientRect();const linkRect=link.getBoundingClientRect();callout.textContent=link.textContent.trim();callout.style.left=`${linkRect.left+linkRect.width/2-railRect.left+rail.scrollLeft}px`};const update=index=>{activeIndex=Math.max(0,Math.min(cards.length-1,index));const activeCard=cards[activeIndex];cards.forEach((card,i)=>{card.classList.toggle('is-focus',i===activeIndex);card.setAttribute('aria-hidden',i===activeIndex?'false':'true')});links.forEach(link=>link.classList.toggle('is-active',link.textContent.trim()===activeCard.dataset.year));const activeLink=links.find(link=>link.classList.contains('is-active'));if(activeLink&&rail)rail.scrollTo({left:activeLink.offsetLeft-(rail.clientWidth-activeLink.offsetWidth)/2,behavior:scrollBehaviour});positionCallout(activeLink);if(controls[0])controls[0].disabled=activeIndex===0;if(controls[1])controls[1].disabled=activeIndex===cards.length-1};const goTo=index=>{const target=Math.max(0,Math.min(cards.length-1,index));const card=cards[target];const left=card.offsetLeft-(track.clientWidth-card.offsetWidth)/2;track.scrollTo({left,behavior:scrollBehaviour});update(target)};controls.forEach(button=>button.addEventListener('click',()=>goTo(activeIndex+Number(button.dataset.direction))));links.forEach(link=>link.addEventListener('click',event=>{event.preventDefault();const target=firstByYear.get(link.textContent.trim());if(target)goTo(cards.indexOf(target))}));track.addEventListener('keydown',event=>{if(event.key==='ArrowLeft'){event.preventDefault();goTo(activeIndex-1)}if(event.key==='ArrowRight'){event.preventDefault();goTo(activeIndex+1)}});let ticking=false;track.addEventListener('scroll',()=>{if(ticking)return;ticking=true;requestAnimationFrame(()=>{const center=track.scrollLeft+track.clientWidth/2;let nearest=0;let distance=Infinity;cards.forEach((card,index)=>{const d=Math.abs(card.offsetLeft+card.offsetWidth/2-center);if(d<distance){distance=d;nearest=index}});update(nearest);ticking=false})},{passive:true});window.addEventListener('resize',()=>{const activeLink=links.find(link=>link.classList.contains('is-active'));positionCallout(activeLink)},{passive:true});const jumpToHash=()=>{if(location.hash.startsWith('#year-')){const card=firstByYear.get(location.hash.slice(6));if(card){goTo(cards.indexOf(card));return}}goTo(0)};jumpToHash();window.addEventListener('hashchange',jumpToHash)})();(()=>{const scrollBehaviour=matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth';document.querySelectorAll('.media-gallery').forEach(gallery=>{const track=gallery.querySelector('.media-gallery-track');if(!track)return;const slides=[...track.querySelectorAll('.media-gallery-slide')];const controls=[...gallery.querySelectorAll('.media-gallery-control')];const dots=[...gallery.querySelectorAll('.media-gallery-dot')];let activeIndex=0;const update=index=>{activeIndex=Math.max(0,Math.min(slides.length-1,index));slides.forEach((slide,i)=>{slide.setAttribute('aria-hidden',i===activeIndex?'false':'true');slide.setAttribute('aria-posinset',String(i+1));slide.setAttribute('aria-setsize',String(slides.length))});dots.forEach((dot,i)=>{dot.classList.toggle('is-active',i===activeIndex);dot.setAttribute('aria-selected',i===activeIndex?'true':'false')});if(controls[0])controls[0].disabled=activeIndex===0;if(controls[1])controls[1].disabled=activeIndex===slides.length-1};const goTo=index=>{const target=Math.max(0,Math.min(slides.length-1,index));track.scrollTo({left:slides[target].offsetLeft,behavior:scrollBehaviour});update(target)};controls.forEach(button=>button.addEventListener('click',()=>goTo(activeIndex+Number(button.dataset.direction))));dots.forEach((dot,index)=>dot.addEventListener('click',()=>goTo(index)));track.addEventListener('keydown',event=>{if(event.key==='ArrowLeft'){event.preventDefault();goTo(activeIndex-1)}if(event.key==='ArrowRight'){event.preventDefault();goTo(activeIndex+1)}});let ticking=false;track.addEventListener('scroll',()=>{if(ticking)return;ticking=true;requestAnimationFrame(()=>{const center=track.scrollLeft+track.clientWidth/2;let nearest=0;let distance=Infinity;slides.forEach((slide,index)=>{const d=Math.abs(slide.offsetLeft+slide.offsetWidth/2-center);if(d<distance){distance=d;nearest=index}});update(nearest);ticking=false})},{passive:true});update(0)})})();</script>
+</body>
+</html>
