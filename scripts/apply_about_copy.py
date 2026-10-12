@@ -190,8 +190,8 @@ def partnership_slide(
 
 def partnerships_section(lang: str, blocks: dict) -> str:
     if lang == "en":
-        tag = "03 Partnerships"
-        section_title = "Partnerships and initiatives"
+        tag = "03 Recent Activities"
+        section_title = "Recent Activities"
         scrub = [
             ("unesco", "UNESCO"),
             ("fifty-best", "50 Best"),
@@ -216,10 +216,10 @@ def partnerships_section(lang: str, blocks: dict) -> str:
                 "图片 — 青年厨艺项目<br>跨市场沉浸式体验",
             ),
         ]
-        aria_track = "Browse Lee Kum Kee partnerships; swipe or use arrows to see more"
+        aria_track = "Browse Lee Kum Kee recent activities; swipe or use arrows to see more"
     else:
-        tag = "03 合作伙伴与项目"
-        section_title = "合作伙伴与项目"
+        tag = "03 企業動向"
+        section_title = "企業動向"
         scrub = [
             ("unesco", "UNESCO"),
             ("fifty-best", "50 Best"),
@@ -244,7 +244,7 @@ def partnerships_section(lang: str, blocks: dict) -> str:
                 "图片 — 青年厨艺项目<br>跨市场沉浸式体验",
             ),
         ]
-        aria_track = "浏览合作伙伴与项目；左右滑动或使用箭头查看更多"
+        aria_track = "浏览企業動向；左右滑动或使用箭头查看更多"
 
     slides = []
     for i, (ke, kz, row, rev, le, lz) in enumerate(kickers):
