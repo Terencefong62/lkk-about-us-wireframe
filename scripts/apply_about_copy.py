@@ -262,14 +262,14 @@ def partnerships_section(lang: str, blocks: dict) -> str:
 
 PARTNERSHIP_CSS = """
 .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-#partnerships{--partnership-card-width:min(1080px,96%);--partnership-peek-gap:clamp(10px,1.8vw,22px)}
+#partnerships{--partnership-card-width:min(88%,1080px);--partnership-peek-gap:clamp(12px,2vw,20px)}
 #partnerships .partnership-shell{margin-top:clamp(8px,2vw,20px);overflow:visible}
-#partnerships .partnership-stage{position:relative;margin-inline:calc(-1 * var(--page-pad));padding-inline:clamp(60px,5vw,88px);overflow:visible}
-#partnerships .partnership-track{display:grid;grid-auto-flow:column;grid-auto-columns:var(--partnership-card-width);gap:var(--partnership-peek-gap);overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;overscroll-behavior-inline:contain;scroll-padding-inline:calc((100% - var(--partnership-card-width))/2);padding-inline:calc((100% - var(--partnership-card-width))/2);align-items:stretch}
+#partnerships .partnership-stage{position:relative;margin-inline:0;padding-inline:clamp(36px,3vw,48px);overflow:hidden}
+#partnerships .partnership-track{display:grid;grid-auto-flow:column;grid-auto-columns:var(--partnership-card-width);gap:var(--partnership-peek-gap);overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;overscroll-behavior-inline:contain;scroll-padding-inline:0;padding-inline:0;align-items:stretch}
 #partnerships .partnership-track::-webkit-scrollbar{display:none}
-#partnerships .partnership-card{scroll-snap-align:center;scroll-snap-stop:normal;opacity:1;filter:none;transform:scale(1);transition:opacity .28s ease,transform .28s ease,filter .28s ease;min-width:0}
-#partnerships .partnership-card:not(.is-focus){opacity:.42;filter:saturate(.85);transform:scale(.97)}
-#partnerships .partnership-card.is-focus{opacity:1;filter:none;transform:scale(1)}
+#partnerships .partnership-card{scroll-snap-align:start;scroll-snap-stop:normal;opacity:1;filter:none;transform:none;transition:opacity .28s ease,filter .28s ease;min-width:0;max-width:100%}
+#partnerships .partnership-card:not(.is-focus){opacity:.45;filter:saturate(.85)}
+#partnerships .partnership-card.is-focus{opacity:1;filter:none}
 #partnerships .partnership-card-inner{border:0;background:transparent;padding:0;min-width:0}
 #partnerships .partnership-kicker{margin:0 0 clamp(10px,1.6vw,16px);text-transform:uppercase;letter-spacing:.14em;font-size:10px;font-weight:800;color:var(--muted)}
 #partnerships .partnership-title{margin-bottom:var(--heading-copy-gap)}
