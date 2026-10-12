@@ -16,25 +16,31 @@ ACTIVITIES_CSS = r"""
 #partnerships .activities-tab{display:flex;align-items:center;gap:10px;width:100%;min-height:54px;padding:14px 16px;border:1px solid var(--line);background:var(--paper);text-align:left;cursor:pointer;font:inherit;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);transition:background .2s ease,color .2s ease,border-color .2s ease}
 #partnerships .activities-tab__num{font-family:var(--font-flare);font-size:16px;font-weight:400;letter-spacing:-.02em;line-height:1;min-width:1.75em}
 #partnerships .activities-tab.is-active{background:var(--ink);border-color:var(--ink);color:var(--paper)}
-#partnerships .activities-panels{min-width:0;max-width:min(600px,100%);border:1px solid var(--line);background:var(--paper)}
+#partnerships{--activities-gallery-peek:clamp(16px,2.4vw,32px);--activities-gallery-gap:clamp(8px,1.2vw,14px)}
+#partnerships .activities-panels{min-width:0;max-width:none;border:0;background:transparent}
 #partnerships .activities-panel{display:none}
-#partnerships .activities-panel.is-active{display:block}
-#partnerships .activities-panel__media{position:relative;aspect-ratio:16/9;max-height:min(240px,42vw);min-height:0;background:var(--soft);border-bottom:1px solid var(--line);overflow:hidden}
-#partnerships .activities-panel__media .media-gallery{width:100%;height:100%}
-#partnerships .activities-panel__media .media-gallery-track{height:100%;display:grid;grid-auto-flow:column;grid-auto-columns:100%}
-#partnerships .activities-panel__media .media-gallery-slide.media-placeholder{height:100%;min-height:0!important;aspect-ratio:auto;border:0;background:var(--soft)}
+#partnerships .activities-panel.is-active{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:clamp(28px,4.5vw,64px);align-items:center}
+#partnerships .activities-panel__body{min-width:0;padding:0;max-width:none}
+#partnerships .activities-panel__tag{display:none}
+#partnerships .activities-panel__title{margin:0 0 clamp(18px,2.4vw,28px);width:100%;max-width:none;font-family:var(--font-flare);font-size:clamp(28px,3.4vw,46px);line-height:1.04;letter-spacing:-.03em;font-weight:400;text-transform:uppercase}
+#partnerships .activities-panel__body .body-copy{width:100%;max-width:none;font-size:clamp(14px,1.05vw,15px);line-height:1.62}
+#partnerships .activities-cta{display:none}
+#partnerships .activities-panel__media{position:relative;min-width:0;aspect-ratio:auto;max-height:none;background:transparent;border:0;overflow:visible}
+#partnerships .activities-panel__media .media-gallery.media-gallery--peek{width:100%}
+#partnerships .activities-panel__media .media-gallery--peek .media-gallery-track{display:flex;gap:var(--activities-gallery-gap);overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;overscroll-behavior-inline:contain}
+#partnerships .activities-panel__media .media-gallery--peek .media-gallery-track::-webkit-scrollbar{display:none}
+#partnerships .activities-panel__media .media-gallery--peek .media-gallery-slide{flex:0 0 calc(100% - var(--activities-gallery-peek));width:auto;min-height:clamp(280px,36vw,460px);aspect-ratio:4/5;scroll-snap-align:start;scroll-snap-stop:always}
+#partnerships .activities-panel__media .media-gallery--peek.is-at-end .media-gallery-slide:last-child{flex-basis:100%}
+#partnerships .activities-panel__media .media-gallery-slide.media-placeholder{height:auto;border:1px solid var(--line);background:var(--soft)}
 #partnerships .activities-panel__media .media-placeholder:before,#partnerships .activities-panel__media .media-placeholder:after{display:none}
-#partnerships .activities-panel__media .media-gallery-control{width:44px;height:44px;font-size:20px}
-#partnerships .activities-panel__media .media-gallery-dots{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);margin:0;background:rgba(255,255,255,.92);padding:6px 10px;border:1px solid var(--line)}
-#partnerships .activities-panel__body{padding:clamp(16px,2.2vw,22px) clamp(16px,2.4vw,24px) clamp(18px,2.4vw,26px);max-width:min(600px,100%)}
-#partnerships .activities-panel__tag{margin:0 0 8px;font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-#partnerships .activities-panel__title{margin:0 0 var(--heading-copy-gap);width:100%;max-width:none;font-family:var(--font-flare);font-size:clamp(20px,2.4vw,30px);line-height:1.08;letter-spacing:-.03em;font-weight:400;text-transform:uppercase}
-#partnerships .activities-panel__body .body-copy{width:100%;max-width:none;font-size:14px;line-height:1.58}
-#partnerships .activities-cta{margin-top:clamp(16px,2.2vw,22px);display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:var(--ink)}
-#partnerships .activities-cta::before{content:"▶";font-size:7px;line-height:1}
+#partnerships .activities-panel__media .media-gallery-control{width:48px;height:48px;font-size:22px;top:50%;transform:translateY(-50%);box-shadow:0 2px 12px rgba(0,0,0,.08)}
+#partnerships .activities-panel__media .media-gallery-control.prev{left:10px}
+#partnerships .activities-panel__media .media-gallery-control.next{right:10px}
+#partnerships .activities-panel__media .media-gallery-dots{position:static;transform:none;margin-top:clamp(14px,2vw,20px);padding:0;background:transparent;border:0}
 #partnerships .activities-scroll-hint{margin-top:clamp(36px,5vw,60px);display:flex;justify-content:center}
 #partnerships .activities-scroll-hint a,.partnerships .activities-scroll-hint button{width:48px;height:48px;border:1px solid var(--ink);border-radius:50%;background:var(--paper);display:grid;place-items:center;font-size:18px;line-height:1;color:inherit;text-decoration:none}
 #partnerships .activities-scroll-hint a:focus-visible,#partnerships .activities-scroll-hint button:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+@media(max-width:900px){#partnerships .activities-panel.is-active{grid-template-columns:1fr;gap:clamp(22px,4vw,32px)}#partnerships .activities-panel__media .media-gallery--peek .media-gallery-slide{min-height:clamp(240px,52vw,360px)}}
 @media(max-width:800px){#partnerships .activities-layout{grid-template-columns:1fr}#partnerships .activities-nav{flex-direction:row;flex-wrap:wrap}#partnerships .activities-tab{flex:1 1 calc(33.333% - 8px);min-width:120px}}
 """.strip()
 
