@@ -131,9 +131,14 @@ def timeline_cards(timeline, lang: str) -> str:
 
 
 def scrubber_links(timeline) -> str:
+    years: list[str] = []
+    for item in timeline:
+        y = item["year"]
+        if y not in years:
+            years.append(y)
     return "".join(
-        f'<a class="timeline-year-link{" is-active" if i == 0 else ""}" href="#year-{item["year"]}">{esc(item["year"])}</a>'
-        for i, item in enumerate(timeline)
+        f'<a class="timeline-year-link{" is-active" if i == 0 else ""}" href="#year-{esc(y)}">{esc(y)}</a>'
+        for i, y in enumerate(years)
     )
 
 
