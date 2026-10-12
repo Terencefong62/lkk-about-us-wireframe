@@ -18,6 +18,17 @@ def paras(text: str) -> str:
     return "".join(f"<p>{esc(p)}</p>" for p in parts)
 
 
+def statement_h3_from_row(row: dict, lang: str, kind: str) -> str:
+    """Vision/mission card h3: label lives in <span>, h3 is tagline only."""
+    if kind == "vision":
+        if lang == "en":
+            return "Where There Are People<br>There Is Lee Kum Kee"
+        return esc("有人的地方，就有李锦记")
+    if lang == "en":
+        return "Promoting Chinese Culinary<br>Culture Worldwide"
+    return esc("发扬中华优秀饮食文化")
+
+
 def headline_html(text: str, br_after: int | None = None) -> str:
     """Turn excel headline into HTML; optional br after N words for EN flair."""
     text = (text or "").strip()
@@ -298,8 +309,8 @@ def apply_file(path: Path, lang: str, blocks, timeline, values, leadership):
     if lang == "en":
         h1 = headline_html(heritage["en_h"])
         overview_body = paras(heritage["en_b"])
-        vision_h = headline_html(blocks["vision"]["en_h"])
-        mission_h = headline_html(blocks["mission"]["en_h"])
+        vision_h = statement_h3_from_row(blocks["vision"], lang, "vision")
+        mission_h = statement_h3_from_row(blocks["mission"], lang, "mission")
         mi = blocks["milestones_intro"]
         milestones_h2 = headline_html(mi["en_h"], br_after=2)
         milestones_body = f'<p class="body-copy">{esc(mi["en_b"])}</p>'
@@ -320,8 +331,8 @@ def apply_file(path: Path, lang: str, blocks, timeline, values, leadership):
     else:
         h1 = esc(heritage["zh_h"])
         overview_body = paras(heritage["zh_b"])
-        vision_h = headline_html(blocks["vision"]["zh_b"])
-        mission_h = headline_html(blocks["mission"]["zh_b"])
+        vision_h = statement_h3_from_row(blocks["vision"], lang, "vision")
+        mission_h = statement_h3_from_row(blocks["mission"], lang, "mission")
         mi = blocks["milestones_intro"]
         milestones_h2 = esc(mi["zh_h"])
         milestones_body = f'<p class="body-copy">{esc(mi["zh_b"])}</p>'
