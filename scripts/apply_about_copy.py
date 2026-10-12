@@ -262,7 +262,7 @@ def partnerships_section(lang: str, blocks: dict) -> str:
 
 PARTNERSHIP_CSS = """
 .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-#partnerships{--partnership-card-width:min(920px,88%);--partnership-peek-gap:clamp(12px,2.8vw,28px)}
+#partnerships{--partnership-card-width:min(1080px,96%);--partnership-peek-gap:clamp(10px,1.8vw,22px)}
 #partnerships .partnership-shell{margin-top:clamp(8px,2vw,20px);overflow:visible}
 #partnerships .partnership-stage{position:relative;margin-inline:calc(-1 * var(--page-pad));padding-inline:clamp(60px,5vw,88px);overflow:visible}
 #partnerships .partnership-track{display:grid;grid-auto-flow:column;grid-auto-columns:var(--partnership-card-width);gap:var(--partnership-peek-gap);overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;overscroll-behavior-inline:contain;scroll-padding-inline:calc((100% - var(--partnership-card-width))/2);padding-inline:calc((100% - var(--partnership-card-width))/2);align-items:stretch}
@@ -270,11 +270,16 @@ PARTNERSHIP_CSS = """
 #partnerships .partnership-card{scroll-snap-align:center;scroll-snap-stop:normal;opacity:1;filter:none;transform:scale(1);transition:opacity .28s ease,transform .28s ease,filter .28s ease;min-width:0}
 #partnerships .partnership-card:not(.is-focus){opacity:.42;filter:saturate(.85);transform:scale(.97)}
 #partnerships .partnership-card.is-focus{opacity:1;filter:none;transform:scale(1)}
-#partnerships .partnership-card-inner{border:1px solid var(--ink);background:var(--paper);padding:clamp(22px,3vw,40px);min-width:0}
-#partnerships .partnership-kicker{margin:0 0 14px;text-transform:uppercase;letter-spacing:.14em;font-size:10px;font-weight:800;color:var(--muted)}
+#partnerships .partnership-card-inner{border:0;background:transparent;padding:0;min-width:0}
+#partnerships .partnership-kicker{margin:0 0 clamp(10px,1.6vw,16px);text-transform:uppercase;letter-spacing:.14em;font-size:10px;font-weight:800;color:var(--muted)}
 #partnerships .partnership-title{margin-bottom:var(--heading-copy-gap)}
-#partnerships .feature-grid{align-items:start;gap:clamp(32px,5vw,72px)}
-#partnerships .feature-media .media-placeholder{min-height:0}
+#partnerships .feature-grid{align-items:stretch;gap:clamp(24px,3.5vw,48px);grid-template-columns:minmax(0,1fr) minmax(0,1.12fr)}
+#partnerships .feature-grid.reverse{grid-template-columns:minmax(0,1.12fr) minmax(0,1fr)}
+#partnerships .feature-copy{border:1px solid var(--ink);background:var(--paper);padding:clamp(20px,2.5vw,32px);min-width:0}
+#partnerships .feature-media{align-self:stretch;min-width:0}
+#partnerships .feature-media .media-gallery{width:100%}
+#partnerships .feature-media .media-gallery-slide.media-placeholder{min-height:0;border:0;background:var(--soft)}
+#partnerships .feature-media .media-placeholder:before,#partnerships .feature-media .media-placeholder:after{display:none}
 #partnerships .partnership-edge-control{position:absolute;z-index:9;top:42%;width:52px;height:52px;border:1px solid var(--ink);border-radius:50%;background:rgba(255,255,255,.96);display:grid;place-items:center;transform:translateY(-50%);font-size:24px;line-height:1;cursor:pointer;box-shadow:0 3px 16px rgba(0,0,0,.12)}
 #partnerships .partnership-edge-control.prev{left:6px}
 #partnerships .partnership-edge-control.next{right:6px}
@@ -282,8 +287,8 @@ PARTNERSHIP_CSS = """
 #partnerships .partnership-jumps{margin-top:clamp(18px,3vw,28px);display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
 #partnerships .partnership-jump{min-height:40px;padding:10px 16px;border:1px solid var(--ink);background:var(--paper);text-transform:uppercase;letter-spacing:.06em;font-size:10px;font-weight:800;cursor:pointer}
 #partnerships .partnership-jump.is-active{background:var(--ink);color:var(--paper)}
-@media(min-width:701px){#partnerships{--partnership-card-width:min(880px,76%)}#partnerships .partnership-edge-control.prev{left:0}#partnerships .partnership-edge-control.next{right:0}}
-@media(max-width:700px){#partnerships{--partnership-card-width:min(100%,92%)}#partnerships .partnership-stage{padding-inline:clamp(48px,var(--page-pad),56px)}#partnerships .partnership-edge-control{width:44px;height:44px;top:36%}#partnerships .feature-grid,#partnerships .feature-grid.reverse{grid-template-columns:1fr}}
+@media(min-width:701px){#partnerships{--partnership-card-width:min(1240px,94%)}#partnerships .partnership-stage{padding-inline:clamp(52px,4vw,72px)}#partnerships .partnership-edge-control.prev{left:0}#partnerships .partnership-edge-control.next{right:0}}
+@media(max-width:700px){#partnerships{--partnership-card-width:min(100%,96%)}#partnerships .partnership-stage{padding-inline:clamp(44px,var(--page-pad),52px)}#partnerships .partnership-edge-control{width:44px;height:44px;top:36%}#partnerships .feature-grid,#partnerships .feature-grid.reverse{grid-template-columns:1fr}#partnerships .feature-copy{border-width:1px 0 0}}
 """
 
 PARTNERSHIP_JS = """;(()=>{const track=document.getElementById('partnership-track');if(!track)return;const cards=[...track.querySelectorAll('.partnership-card')];const jumps=[...document.querySelectorAll('#partnerships .partnership-jump')];const controls=[...document.querySelectorAll('#partnerships .partnership-edge-control')];const scrollBehaviour=matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth';let activeIndex=0;const update=index=>{activeIndex=Math.max(0,Math.min(cards.length-1,index));cards.forEach((card,i)=>{card.classList.toggle('is-focus',i===activeIndex);card.setAttribute('aria-hidden',i===activeIndex?'false':'true')});jumps.forEach((btn,i)=>btn.classList.toggle('is-active',i===activeIndex));if(controls[0])controls[0].disabled=activeIndex===0;if(controls[1])controls[1].disabled=activeIndex===cards.length-1};const goTo=index=>{const target=Math.max(0,Math.min(cards.length-1,index));const card=cards[target];track.scrollTo({left:card.offsetLeft-(track.clientWidth-card.offsetWidth)/2,behavior:scrollBehaviour});update(target)};controls.forEach(button=>button.addEventListener('click',()=>goTo(activeIndex+Number(button.dataset.direction))));jumps.forEach((button,index)=>button.addEventListener('click',()=>goTo(index)));track.addEventListener('keydown',event=>{if(event.key==='ArrowLeft'){event.preventDefault();goTo(activeIndex-1)}if(event.key==='ArrowRight'){event.preventDefault();goTo(activeIndex+1)}});let ticking=false;track.addEventListener('scroll',()=>{if(ticking)return;ticking=true;requestAnimationFrame(()=>{const center=track.scrollLeft+track.clientWidth/2;let nearest=0;let distance=Infinity;cards.forEach((card,index)=>{const d=Math.abs(card.offsetLeft+card.offsetWidth/2-center);if(d<distance){distance=d;nearest=index}});update(nearest);ticking=false})},{passive:true});goTo(0)})()"""
