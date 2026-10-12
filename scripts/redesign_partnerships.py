@@ -52,7 +52,7 @@ def extract_slides(html: str) -> list[dict]:
         title = re.search(r'class="partnership-title">(.*?)</h2>', block, re.DOTALL)
         body = re.search(r'<div class="body-copy">(.*?)</div>\s*</div>\s*<div class="feature-media">', block, re.DOTALL)
         gallery = re.search(
-            r'(<div class="media-gallery"[^>]*>.*?</div>\s*<div class="media-gallery-dots"[^>]*>.*?</div>\s*</div>)',
+            r'(<div class="media-gallery"[^>]*>.*?<div class="media-gallery-dots"[^>]*>.*?</div>\s*</div>)',
             block,
             re.DOTALL,
         )
@@ -77,12 +77,11 @@ def build_slides_html(slides: list[dict]) -> str:
     out = []
     for i, s in enumerate(slides):
         focus = " is-focus" if i == 0 else ""
-        body_mod = " activity-slide__body--media-left" if s["reverse"] else ""
         idx = f"{i+1:02d}"
         out.append(
             f"""<article class="activity-slide partnership-card{focus}" data-partnership="{s['data']}" aria-label="{s['aria']}">
   <header class="activity-slide__head"><span class="activity-slide__index">{idx}</span><span class="activity-slide__tag">{s['kicker']}</span></header>
-  <div class="activity-slide__body{body_mod}">
+  <div class="activity-slide__body">
     <div class="activity-slide__content">
       <h2 class="activity-slide__title">{s['title']}</h2>
       <div class="body-copy">{s['body']}</div>

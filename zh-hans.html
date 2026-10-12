@@ -33,8 +33,7 @@
 #partnerships .activity-slide__head{display:flex;align-items:baseline;gap:14px;margin-bottom:clamp(16px,2.4vw,24px)}
 #partnerships .activity-slide__index{font-family:var(--font-flare);font-size:clamp(22px,2.4vw,30px);line-height:1;letter-spacing:-.02em}
 #partnerships .activity-slide__tag{text-transform:uppercase;letter-spacing:.14em;font-size:10px;font-weight:800;color:var(--muted)}
-#partnerships .activity-slide__body{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:clamp(20px,3.2vw,40px);align-items:start}
-#partnerships .activity-slide__body--media-left .activity-slide__visual{order:-1}
+#partnerships .activity-slide__body{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:clamp(20px,3.2vw,40px);align-items:center}
 #partnerships .activity-slide__content{min-width:0;padding-right:clamp(0px,1vw,8px)}
 #partnerships .activity-slide__title{margin:0 0 var(--heading-copy-gap);font-family:var(--font-flare);font-size:clamp(28px,3.2vw,44px);line-height:1.05;letter-spacing:-.03em;font-weight:400;text-transform:uppercase}
 #partnerships .activity-slide__content .body-copy{font-size:clamp(14px,1.05vw,15px);line-height:1.6;max-width:56ch}
@@ -53,7 +52,7 @@
 #partnerships .partnership-jump{min-height:38px;padding:9px 14px;border:1px solid var(--line);background:var(--paper);text-transform:uppercase;letter-spacing:.06em;font-size:10px;font-weight:800;cursor:pointer;color:var(--muted)}
 #partnerships .partnership-jump.is-active{border-color:var(--ink);color:var(--ink);background:var(--paper)}
 @media(min-width:901px){#partnerships .activity-slide{flex:0 0 min(92%,1040px)}}
-@media(max-width:900px){#partnerships .activity-slide__body{grid-template-columns:1fr;gap:20px}#partnerships .activity-slide__body--media-left .activity-slide__visual{order:0}}
+@media(max-width:900px){#partnerships .activity-slide__body{grid-template-columns:1fr;gap:20px;align-items:start}}
 @media(max-width:700px){#partnerships .partnership-stage{padding:0 clamp(36px,9vw,44px)}#partnerships .partnership-edge-control{width:40px;height:40px;font-size:18px;top:38%}#partnerships .activity-slide{flex:0 0 calc(100% - 12px)}}#partnerships .feature-copy{border-width:1px}}
 
 .media-gallery{position:relative;min-width:0}.media-gallery-track{display:grid;grid-auto-flow:column;grid-auto-columns:100%;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;overscroll-behavior-inline:contain}.media-gallery-track::-webkit-scrollbar{display:none}.media-gallery-slide{width:100%;aspect-ratio:16/9;min-height:0;scroll-snap-align:start;scroll-snap-stop:always}.feature-media .media-gallery-slide{aspect-ratio:16/9;min-height:0}.feature-media .media-placeholder.media-gallery-slide{min-height:0}.media-gallery-control{position:absolute;z-index:2;top:50%;width:52px;height:52px;border:1px solid var(--ink);border-radius:50%;background:rgba(255,255,255,.96);display:grid;place-items:center;transform:translateY(-50%);font-size:24px;line-height:1;cursor:pointer;box-shadow:0 3px 16px rgba(0,0,0,.12)}.media-gallery-control.prev{left:14px}.media-gallery-control.next{right:14px}.media-gallery-control:disabled{opacity:.22;cursor:default}.media-gallery-control:focus-visible{outline:2px solid var(--ink);outline-offset:3px}.media-gallery-dots{margin-top:16px;display:flex;justify-content:center;align-items:center;gap:10px}.media-gallery-dot{width:10px;height:10px;padding:0;border:1px solid var(--ink);border-radius:50%;background:var(--paper);cursor:pointer}.media-gallery-dot.is-active{background:var(--ink)}.media-gallery-dot:focus-visible{outline:2px solid var(--ink);outline-offset:2px}.media-gallery-slide--video:before,.media-gallery-slide--video:after{display:none}.media-gallery-video{position:absolute;inset:0;z-index:1;width:100%;height:100%;object-fit:cover;background:#111}.media-gallery-play{position:absolute;z-index:3;top:50%;left:50%;width:64px;height:64px;border:1px solid var(--ink);border-radius:50%;background:rgba(255,255,255,.96);display:grid;place-items:center;transform:translate(-50%,-50%);font-size:22px;line-height:1;cursor:pointer;box-shadow:0 3px 16px rgba(0,0,0,.12)}.media-gallery-play:focus-visible{outline:2px solid var(--ink);outline-offset:3px}.media-gallery-slide--video.is-playing .media-gallery-play{opacity:0;pointer-events:none}.media-gallery-slide--video.is-playing .media-label{opacity:0}@media(max-width:700px){.media-gallery-control{width:46px;height:46px}.media-gallery-control.prev{left:8px}.media-gallery-control.next{right:8px}.media-gallery-slide .media-label{max-width:100%;overflow-wrap:anywhere}.feature-media .media-gallery-slide{min-height:0}}
@@ -330,7 +329,7 @@ html[lang="zh-Hans"] #company-overview .statement-copy > span{font-size:13px;let
 </article>
 <article class="activity-slide partnership-card" data-partnership="50-best-restaurants" aria-label="世界50最佳餐厅">
   <header class="activity-slide__head"><span class="activity-slide__index">02</span><span class="activity-slide__tag">世界50最佳餐厅</span></header>
-  <div class="activity-slide__body activity-slide__body--media-left">
+  <div class="activity-slide__body">
     <div class="activity-slide__content">
       <h2 class="activity-slide__title">全球餐饮创意的交流平台</h2>
       <div class="body-copy"><p>李锦记是 The World&#x27;s 50 Best Restaurants 首位独家官方酱料及调味品合作伙伴。这一合作让我们的酱料与烹饪专业能力，与正在塑造全球餐饮格局的主厨们展开深度对话。通过厨师交流、行业盛事与共同探索，我们更深入地了解专业厨房的运作方式，同时也为厨师们提供一个值得信赖的平台，让他们测试创意、重新诠释风味、为下一代食客打造美食体验。</p></div>
